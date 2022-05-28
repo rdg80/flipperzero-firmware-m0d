@@ -77,7 +77,7 @@ static void remote_send_signal(uint32_t frequency, string_t signal, string_t pro
         TAG, "Transmitting at %lu, repeat %lu. Press CTRL+C to stop\r\n", frequency, repeat);
 
     furi_hal_power_suppress_charge_enter();
-    notification_message(notification, &sequence_set_vibro_on);
+    notification_message(notification, &sequence_blink_magenta_10);
 
     furi_hal_subghz_start_async_tx(subghz_transmitter_yield, transmitter);
 
@@ -85,6 +85,7 @@ static void remote_send_signal(uint32_t frequency, string_t signal, string_t pro
         FURI_LOG_D(TAG, ".");
         fflush(stdout);
         osDelay(333);
+        notification_message(notification, &sequence_set_vibro_on);
     }
     notification_message(notification, &sequence_reset_vibro);
 
