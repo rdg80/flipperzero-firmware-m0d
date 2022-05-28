@@ -113,7 +113,7 @@ static void jukebox_render_callback(Canvas* canvas, void* ctx) {
     sprintf(strings[4], "D: %s", file_stub(string_get_cstr(down_file)));
 
     canvas_set_font(canvas, FontPrimary);
-    canvas_draw_str(canvas, 0, 10, "Univeral Remote");
+    canvas_draw_str(canvas, 0, 10, "TouchTunes Remote");
 
     canvas_set_font(canvas, FontSecondary);
     canvas_draw_str(canvas, 0, 24, strings[1]);
