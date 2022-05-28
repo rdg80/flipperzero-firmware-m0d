@@ -9,7 +9,7 @@
 #include <lib/toolbox/path.h>
 #include <notification/notification_messages.h>
 
-#define TAG "UniveralRFRemote"
+#define TAG "UniversalRFRemote"
 
 typedef struct {
     bool press[5];
@@ -113,7 +113,7 @@ static void remote_render_callback(Canvas* canvas, void* ctx) {
     sprintf(strings[4], "D: %s", file_stub(string_get_cstr(down_file)));
 
     canvas_set_font(canvas, FontPrimary);
-    canvas_draw_str(canvas, 0, 10, "Univeral Remote");
+    canvas_draw_str(canvas, 0, 10, "Universal Remote");
 
     canvas_set_font(canvas, FontSecondary);
     canvas_draw_str(canvas, 0, 24, strings[1]);
