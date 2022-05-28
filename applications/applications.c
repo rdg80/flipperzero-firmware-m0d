@@ -54,7 +54,6 @@ extern int32_t clock_app(void *p);
 // extern int32_t floopper_bloopper(void* p);
 // extern int32_t raycast_game_app(void* p);
 extern int32_t spectrum_analyzer_app(void* p);
-extern int32_t flappy_game_app(void* p); 
 extern int32_t file_browser_app(void* p);
 extern int32_t zombiez_app(void* p); 
 extern int32_t jukebox_app(void *p);
@@ -318,14 +317,6 @@ const FlipperApplication FLIPPER_GAMES[] = {
 #ifdef APP_DICE
     {.app = dice_app, 
 	.name = "Dice Roller", 
-	.stack_size = 1024, 
-	.icon = &A_Plugins_14
-	},
-#endif
-
-#ifdef APP_FLAPPY_GAME
-    {.app = flappy_game_app, 
-	.name = "Flipper Flappy Bird", 
 	.stack_size = 1024, 
 	.icon = &A_Plugins_14
 	},
