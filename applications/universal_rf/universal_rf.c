@@ -85,6 +85,7 @@ static void remote_send_signal(uint32_t frequency, string_t signal, string_t pro
         FURI_LOG_D(TAG, ".");
         fflush(stdout);
         osDelay(333);
+        notification_message(notification, &sequence_blink_magenta_10);
         notification_message(notification, &sequence_set_vibro_on);
     }
     notification_message(notification, &sequence_reset_vibro);
