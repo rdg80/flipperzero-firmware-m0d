@@ -3,10 +3,10 @@ GIT_BRANCH		:= $(shell echo $${WORKFLOW_BRANCH_OR_TAG-$$(git rev-parse --abbrev-
 GIT_BRANCH_NUM	:= $(shell git rev-list --count HEAD || echo 'nan')
 BUILD_DATE		:= $(shell date '+%d-%m-%Y' || echo 'unknown')
 BUILD_TIME		:= $(shell date '+%H:%M:%S' || echo 'unknown')
-VERSION			:= $(shell git describe --tags --abbrev=0 --exact-match 2>/dev/null || echo '0.58.1')
+VERSION			:= $(shell git describe --tags --abbrev=0 --exact-match 2>/dev/null || echo '0.1770dif13d.1')
 GIT_DIRTY_BUILD := $(shell git diff --quiet ; echo $$?)
 
-GIT_DIRTY_SUFFIX :=-UL
+GIT_DIRTY_SUFFIX :=-m0d
 ifeq (false, 1)
 	GIT_DIRTY_SUFFIX := -dirty
 endif
