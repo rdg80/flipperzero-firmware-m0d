@@ -12,15 +12,6 @@ I had countless hours of "rabbit hole" searching, googling, uninstalling, reinst
 
 I modified files to make things look and feel cleaner -- to my liking.
 
-### Some of the changes:
-- removed flappy bird (kept crashing on me)
-- adjusted the spelling of "Univeral Remote" to "Universal Remote" (typo)
-- added the Universal Remote (aka Sub-GHz Remote) back to main menu
-- added TouchTunes back to main menu (thank you jimi for the wonderful code)
-- added vibrate and light indication during transmit (thank you shitpost simulator for the code assistance)
-- removed the UniRFremix remote (love the interface look, but was a bit to buggy for me)
-
-___
 
 ## Frysere
 
